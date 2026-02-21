@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagar Thakkannavar - Portfolio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2300e0b3'/><text x='16' y='20' font-family='Arial' font-size='14' font-weight='bold' text-anchor='middle' fill='%23000'>ST</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-text">Portfolio</span>
+      </div>
+      <nav>
+        <ul>
+          <li class="active-link"><a href="#home">Home</a></li>
+          <li><a href="#gallery">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+      </button>
+    </header>
+
+    <main id="home" class="hero-section">
+      <div class="profile-photo scale-in">
+        <img src="sagar.jpg" alt="sagar Profile Photo" />
+        <div class="hero-social-links">
+          <a href="https://github.com/SagarThakkannavar" title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sagar-thakkannavar-8b05a6261"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:sthakkannavar148@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://wa.me/918073730390" title="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="hero-content fade-right">
+        <p class="greeting">Hello! I am</p>
+        <h1 class="name"><span class="accent">Sagar Thakkannavar</span></h1>
+        <p class="title">FullStack Developer | Software Developer</p>
+
+        <div class="tags">
+          Computer Science student and aspiring Software Developer with a strong
+          foundation in Java, Data Structures, and Full-Stack Web Development.
+          Passionate about building clean, user-focused applications and
+          continuously improving through hands-on projects.
+          <!-- <span class="tag tag-primary">Rob</span>
+          <span class="tag tag-primary">Development</span>
+          <span class="tag tag-primary">ROS</span>
+          <span class="tag tag-secondary">Computer Vision Researcher</span>
+          <span class="tag tag-secondary">Machine Vision</span>
+          <span class="tag tag-secondary">Automation</span> -->
+        </div>
+
+        <div class="hero-buttons">
+          <a href="MY RESUME.pdf" download class="hero-btn primary-btn">
+            <i class="fas fa-download"></i>
+            Download Resume
+          </a>
+          <a href="#contact" class="hero-btn secondary-btn">
+            <i class="fas fa-envelope"></i>
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <section id="gallery" class="gallery-section fade-left">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-subtitle">
+        A showcase of my projects in software development, web design, and
+        logical problem solving.
+      </p>
+
+      <!-- <div class="filter-tabs">
+        <span class="filter-tab active-filter">All</span>
+        <span class="filter-tab">Robotics</span>
+        <span class="filter-tab">AI/ML</span>
+        <span class="filter-tab">Web Development</span>
+      </div> -->
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="project-image-1.png"
+            alt="Project 1: Taskify"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Taskify</h3>
+            <p>
+              Taskify helps users manage daily tasks efficiently through a clean
+              and intuitive interface.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-secondary">JavaScript</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://sagarthakkannavar.github.io/SmartEvent-Planner/"
+                class="project-btn demo-btn"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a
+                href="https://github.com/SagarThakkannavar/SmartEvent-Planner"
+                class="project-btn github-btn"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-2.png"
+            alt="Project 2: BrainQuest"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>BrainQuest</h3>
+            <p>A simple website with lot of puzzle games.</p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-secondary">JavaScript</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://sagarthakkannavar.github.io/BrainQuest-/"
+                class="project-btn demo-btn"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a
+                href="https://github.com/SagarThakkannavar/BrainQuest-"
+                class="project-btn github-btn"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-3.png"
+            alt="Face Detection"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Face Detection based Attendance System</h3>
+            <p>
+              A smart attendance system built using face detection to eliminate
+              manual attendance and improve accuracy.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">React</span>
+              <span class="tag tag-secondary">Node.js</span>
+              <span class="tag tag-secondary">MongoDB</span>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-4.jpg"
+            alt="Project 4: Smart College Student Portal"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Smart College Student Portal</h3>
+            <p>
+              A fully functional e-commerce platform with user authentication,
+              product catalog, and payment integration.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">React</span>
+              <span class="tag tag-secondary">Express</span>
+              <span class="tag tag-secondary">MySQL</span>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-5.png"
+            alt="Project 5: Job Tracker"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Job Tracker</h3>
+            <p>
+              A comprehensive job application tracking system to manage job
+              searches, applications, and interview schedules efficiently.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-secondary">JavaScript</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://sagarthakkannavar.github.io/Job-Tracker/" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/SagarThakkannavar/Job-Tracker" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-6.jpg"
+            alt="Project 6: Resume Builder"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Resume Builder</h3>
+            <p>
+              An interactive resume builder tool that helps users create professional resumes with customizable templates and real-time preview.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-secondary">JavaScript</span>
+            </div>
+            <div class="project-buttons">
+              <a href="https://sagarthakkannavar.github.io/Resume-Builder/" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/SagarThakkannavar/Resume-Builder" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="gallery-item">
+          <img
+            src="project-image-5.jpg"
+            alt="Project 5: Weather App"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Weather Forecast App</h3>
+            <p>
+              A responsive weather application that provides real-time weather
+              data and forecasts using API integration.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">JavaScript</span>
+              <span class="tag tag-secondary">API</span>
+              <span class="tag tag-secondary">Bootstrap</span>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="project-image-6.jpg"
+            alt="Project 6: Portfolio Website"
+            class="project-image"
+          />
+          <div class="project-details">
+            <h3>Personal Portfolio</h3>
+            <p>
+              A modern, responsive portfolio website showcasing projects and
+              skills with smooth animations and dark/light theme.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-secondary">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-secondary">JavaScript</span>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="project-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="#" class="project-btn github-btn">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section id="skills" class="skills-section fade-right">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle">
+        A combination of technical expertise and soft skills that drive success.
+      </p>
+
+      <div class="skills-container">
+        <div class="skill-group fade-in">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skill-boxes">
+            <div class="skill-box">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-java"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-project-diagram"></i>
+              <p>Data Structures & Algorithms</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-database"></i>
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="skill-boxes">
+            <div class="skill-box">
+              <i class="fas fa-comments"></i>
+              <p>Efficient Communication</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-tasks"></i>
+              <p>Team Organization</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-handshake"></i>
+              <p>Team Work</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-clock"></i>
+              <p>Hard Working</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fas fa-tools"></i> Technical Tools</h3>
+          <div class="skill-boxes">
+            <div class="skill-box">
+              <i class="fas fa-file-excel"></i>
+              <p>Microsoft Excel</p>
+            </div>
+            <div class="skill-box">
+              <i class="fas fa-file-word"></i>
+              <p>Microsoft Word</p>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill-box">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="certificates-section fade-left">
+      <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+      <p class="section-subtitle">
+        Formal validation of my skills in Java, Data Structures, and Full-Stack
+        Web Development through recognized certification programs.
+      </p>
+
+      <div class="certificates-container">
+        <div class="certificate-item scale-in">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-details">
+            <h3>FrontEnd Development</h3>
+            <p class="issuer">Issued by: UDEMY (Learning Platform)</p>
+            <p class="date">Completed: October 2024</p>
+            <a href="Udemy.pdf" target="_blank" class="cert-link">
+              View Certificate <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <div class="cert-icon"><i class="fas fa-cogs"></i></div>
+          <div class="cert-details">
+            <h3>Backend Development</h3>
+            <p class="issuer">Issued by: PHYSICS WALLHA</p>
+            <p class="date">Completed: August 2024</p>
+            <a
+              href="Backend physics wallah.pdf"
+              target="_blank"
+              class="cert-link"
+            >
+              View Certificate <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <div class="cert-details">
+            <h3>Journey to Cloud</h3>
+            <p class="issuer">Issued by: IBM SKILLSBUILD</p>
+            <p class="date">Certified: May 2024</p>
+            <a href="Journey to Cloud.pdf" target="_blank" class="cert-link">
+              View Certificate <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <div class="cert-icon"><i class="fas fa-server"></i></div>
+          <div class="cert-details">
+            <h3>Data Structures & Algorithms with Java</h3>
+            <p class="issuer">Issued by: APNA COLLEGE</p>
+            <p class="date">Completed: February 2024</p>
+            <a href="DSA with Java.pdf" target="_blank" class="cert-link">
+              View Certificate <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section fade-right">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <p class="section-subtitle">
+        Academic journey and qualifications that shaped my technical foundation.
+      </p>
+
+      <div class="education-container">
+        <div class="education-item fade-left">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <h3>BE in Computer Science and Engineering</h3>
+            <p class="institute">
+              Maratha Mandal Engineering College, Belagavi
+            </p>
+            <p class="year">2022-2026</p>
+            <p class="grade">8.75 CGPA</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-details">
+            <h3>PUC (Science)</h3>
+            <p class="institute">
+              Shree Shivayogi Murughendra Swamiji PU College, Athani
+            </p>
+            <p class="year">2020-2022</p>
+            <p class="grade">77.14%</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="edu-icon"><i class="fas fa-book"></i></div>
+          <div class="edu-details">
+            <h3>SSLC</h3>
+            <p class="institute">Sankonatti Vidyalaya Sankonatti</p>
+            <p class="year">2017-2020</p>
+            <p class="grade">89.90%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hobbies-section">
+        <h3><i class="fas fa-heart"></i> Hobbies</h3>
+        <div class="hobbies-grid">
+          <div class="hobby-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <p>Creating puzzle games</p>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-robot"></i>
+            <p>Exploring tech & AI</p>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-circle"></i>
+            <p>Playing Cricket</p>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-volleyball-ball"></i>
+            <p>Playing Volleyball</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section scale-in">
+      <h2 class="section-title">
+        A Little <span class="accent">About Me</span>
+      </h2>
+      <p class="section-subtitle">
+        Blending technical precision with a passion for innovation and impact.
+      </p>
+
+      <div class="about-content">
+        <div class="about-text-block">
+          <h3>My Professional Journey</h3>
+          <p>
+            I am Sagar Thakkannavar, a Computer Science student and aspiring
+            Software Developer based in India, with hands-on experience in
+            building full-stack web applications and problem-solving projects.
+            My core expertise lies in Java programming, Data Structures &
+            Algorithms, and modern web technologies. I enjoy tackling real-world
+            software challenges, particularly those involving logical thinking,
+            backend development, and clean user interfaces. From developing
+            interactive web platforms to designing scalable academic systems, my
+            focus is always on writing efficient, maintainable code and
+            delivering practical solutions.
+          </p>
+          <p>
+            I thrive on tackling complex engineering problems, particularly
+            those involving sensor fusion and decision-making under uncertainty.
+            From building high-precision industrial robotic arms to developing
+            next-generation AI models for healthcare, my goal is always to
+            deliver robust solutions that push the boundaries of automation.
+          </p>
+          <div class="expertise-list">
+            <h4>Key Areas of Focus:</h4>
+            <ul>
+              <li>
+                <i class="fas fa-check-circle"></i> Java Programming &
+                Object-Oriented Design
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Data Structures & Algorithms
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Full-Stack Web Development
+                (HTML, CSS, JavaScript)
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>Database Management & SQL
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>Git, GitHub & Collaborative
+                Development
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section fade-in">
+      <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+      <p class="section-subtitle">
+        I am always open to discussing new projects, collaborations, or career
+        opportunities.
+      </p>
+
+      <div class="contact-container">
+        <div class="contact-form-block">
+          <h3>Send Me a Message</h3>
+          <form class="contact-form">
+            <div class="form-group-half">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Your Message..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="button" class="submit-button" onclick="sendMessage()">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Contact Information</h3>
+          <p>Feel free to connect through any of these channels:</p>
+
+          <div class="info-details">
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <p>Email Me:</p>
+              <a href="mailto:sthakkannavar148@gmail.com"
+                >sthakkannavar148@gmail.com</a
+              >
+            </div>
+
+            <div class="detail-item">
+              <i class="fab fa-linkedin"></i>
+              <p>LinkedIn:</p>
+              <a
+                href="https://www.linkedin.com/in/sagar-thakkannavar-64500b266/"
+                target="_blank"
+                >/in/Sagar Thakkannavar</a
+              >
+            </div>
+
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Location:</p>
+              <span>Belagavi, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <p class="connect-label">Connect</p>
+      <div class="social-links">
+        <a href="https://github.com/SagarThakkannavar" title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/sagar-thakkannavar-8b05a6261"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:sthakkannavar148@gmail.com" title="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://wa.me/918073730390" title="WhatsApp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Sagar Thakkannavar &lt;PORTFOLIO /&gt;</p>
+      </div>
+    </footer>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const themeToggle = document.querySelector(".theme-toggle i");
+
+        body.classList.toggle("light-theme");
+
+        if (body.classList.contains("light-theme")) {
+          themeToggle.className = "fas fa-moon";
+        } else {
+          themeToggle.className = "fas fa-sun";
+        }
+      }
+
+      function sendMessage() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !subject || !message) {
+          alert("Please fill in all fields");
+          return;
+        }
+
+        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=sthakkannavar148@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        window.open(gmailLink, "_blank");
+      }
+
+      window.addEventListener("scroll", function () {
+        const sections = [
+          "home",
+          "gallery",
+          "skills",
+          "certificates",
+          "education",
+          "about",
+          "contact",
+        ];
+        const navLinks = document.querySelectorAll("nav ul li");
+
+        let current = "";
+        sections.forEach((section) => {
+          const element = document.getElementById(section);
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            current = section;
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active-link");
+          if (link.querySelector("a").getAttribute("href") === "#" + current) {
+            link.classList.add("active-link");
+          }
+        });
+      });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const animatedElements = document.querySelectorAll(
+          ".fade-in, .fade-left, .fade-right, .scale-in",
+        );
+        animatedElements.forEach((element) => {
+          observer.observe(element);
+        });
+
+        // Add default animation to elements without specific classes
+        const defaultElements = document.querySelectorAll(
+          ".gallery-item, .skill-group:not(.fade-in), .certificate-item:not(.scale-in), .education-item:not(.fade-left)",
+        );
+        defaultElements.forEach((element) => {
+          element.classList.add("fade-in");
+          observer.observe(element);
+        });
+      });
+    </script>
+  </body>
+</html>
