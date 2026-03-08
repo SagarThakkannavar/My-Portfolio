@@ -20,15 +20,18 @@
       <div class="logo">
         <span class="logo-text">Portfolio</span>
       </div>
-      <nav>
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="navMenu">
         <ul>
-          <li class="active-link"><a href="#home">Home</a></li>
-          <li><a href="#gallery">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="active-link"><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#gallery" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+          <li><a href="#certificates" onclick="closeMenu()">Certificates</a></li>
+          <li><a href="#education" onclick="closeMenu()">Education</a></li>
+          <li><a href="#about" onclick="closeMenu()">About me</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
       </nav>
       <button class="theme-toggle" onclick="toggleTheme()">
@@ -731,6 +734,20 @@
       </div>
     </footer>
     <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navMenu");
+        const hamburger = document.querySelector(".hamburger");
+        nav.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        const nav = document.getElementById("navMenu");
+        const hamburger = document.querySelector(".hamburger");
+        nav.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+
       function toggleTheme() {
         const body = document.body;
         const themeToggle = document.querySelector(".theme-toggle i");
